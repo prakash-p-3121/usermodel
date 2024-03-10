@@ -3,12 +3,14 @@ package usermodel
 import "time"
 
 type User struct {
-	ID        string    `json:"id"`
-	FirstName string    `json:"first-name"`
-	LastName  string    `json:"last-name"`
-	EmailID   string    `json:"email-id"`
-	CreatedAt time.Time `json:"created-at"`
-	UpdatedAt time.Time `json:"updated-at"`
+	ID             string    `json:"id"`
+	FirstName      string    `json:"first-name"`
+	LastName       string    `json:"last-name"`
+	EmailID        string    `json:"email-id"`
+	CountryCode    string    `json:"country-code"`
+	PhoneNumberStr string    `json:"phone-number"`
+	CreatedAt      time.Time `json:"created-at"`
+	UpdatedAt      time.Time `json:"updated-at"`
 }
 
 type Password struct {

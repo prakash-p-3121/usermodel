@@ -11,7 +11,7 @@ type UserCreateReq struct {
 	Password       *string `json:"password"`
 }
 
-func (req *UserCreateReq) Validate() error {
+func (req *UserCreateReq) Validate() errorlib.AppError {
 	if req.FirstName == nil {
 		return errorlib.NewBadReqError("first-name-null")
 	}

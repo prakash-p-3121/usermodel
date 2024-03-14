@@ -4,6 +4,7 @@ import "time"
 
 type User struct {
 	ID             string    `json:"id"`
+	IDBitCount     uint64    `json:"id-bit-count"`
 	FirstName      string    `json:"first-name"`
 	LastName       string    `json:"last-name"`
 	EmailID        string    `json:"email-id"`
@@ -14,9 +15,9 @@ type User struct {
 }
 
 type Password struct {
-	UserID    string    `json:"id"` // unique-key
-	Passwd    string    `json:"password"`
-	UpdatedAt time.Time `json:"updated-at"`
+	UserID       string    `json:"id"` // unique-key
+	HashedPasswd string    `json:"password"`
+	UpdatedAt    time.Time `json:"updated-at"`
 }
 
 type ShippingAddress struct {

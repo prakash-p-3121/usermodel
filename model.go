@@ -4,7 +4,7 @@ import "time"
 
 type User struct {
 	ID             string    `json:"id"`
-	IDBitCount     uint64    `json:"id-bit-count"`
+	IDBitCount     int64     `json:"id-bit-count"`
 	FirstName      string    `json:"first-name"`
 	LastName       string    `json:"last-name"`
 	EmailID        string    `json:"email-id"`
